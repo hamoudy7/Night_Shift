@@ -1,0 +1,135 @@
+#mainposter {
+  padding: 70px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: url(horror.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#title {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  margin-left: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#titleleft p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #e5e216;
+}
+#titleleft h1 {
+  font-size: 40px;
+  color: wheat;
+}
+#titler a {
+  text-decoration: none;
+  color: wheat;
+  margin-left: 10px;
+  background-color: #21232b;
+  padding: 15px;
+  border-radius: 50px;
+  border: solid #333 2px;
+  transition: 0.5s;
+}
+#titler a:focus {
+  border: solid #e5e216 2px;
+}
+#card {
+  margin-top: 20px;
+  margin-left: 30px;
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 450px;
+  border-radius: 14px;
+}
+#poster {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#poster img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+  border-radius: 12px;
+}
+#datalist {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 1.5em 1.5em 2em;
+  backdrop-filter: blur(16px);
+  background-color: #000;
+  transition: 0.5s;
+}
+#card:hover #datalist {
+  bottom: 0;
+}
+#datalist h1 {
+  color: wheat;
+  font-size: 26px;
+  font-weight: 800;
+}
+#datalist p {
+  color: wheat;
+  font-weight: 800;
+}
+#divstar {
+display: inline-block;
+}
+#divstar input{
+  display: none;
+}
+#divstar label{
+  float: right;
+  cursor: pointer;
+  color: wheat;
+  transition: 0.3s;
+}
+#divstar label::before{
+  content: '\2605';
+  font-size: 30px;
+
+}
+#divstar input:checked~label,
+
+#divstar label:hover,
+#divstar label:hover~label  
+{
+color: #e5e216;
+transition:  0.3s;
+}
+button{
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 9px;
+  font-size: 14px;
+  color: wheat;
+  border-radius: 35px;
+  border: solid blue 2px;
+  width: 130px;
+  transition: 0.4s;
+  font-weight: 700;
+  cursor: pointer;
+}
+#datalist button:hover{
+background-color: #e5e216;
+color: #21232b;
+}
