@@ -1,110 +1,122 @@
-* {
-  font-family: "cairo", sans-serif;
-  margin: 0%;
-  padding: 0%;
-  scroll-behavior: smooth;
-}
-
-#content {
-  /* Remove padding to allow full-screen image */
-  padding: 0;
+#mainposter {
+  padding: 70px;
   width: 100%;
   height: 100%;
-  background-image: url("backgrd.avif");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: url(horror.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; /* Center the image */
-  background-size: cover; /* Scale the image to cover the screen */
 }
-#navbar {
+#title {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  margin-left: 130px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#navbar #navleft {
-  margin-left: 20px;
+#titleleft p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #e5e216;
 }
-#navbar #navleft a {
+#titleleft h1 {
+  font-size: 40px;
+  color: wheat;
+}
+#titler a {
   text-decoration: none;
   color: wheat;
-  font-size: 34px;
-  font-weight: 700;
-}
-#navbar #navcenter a:hover {
-  color: blue;
-}
-
-#navbar #navcenter a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: wheat;
-  font-size: 20px;
+  margin-left: 10px;
+  background-color: #21232b;
+  padding: 15px;
+  border-radius: 50px;
+  border: solid #333 2px;
   transition: 0.5s;
 }
-#navright {
-  margin-right: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#titler a:focus {
+  border: solid #e5e216 2px;
 }
-#navright select {
-  background: none;
-  color: wheat;
-  margin-right: 12px;
-  font-size: 18px;
+#card {
+  margin-top: 20px;
+  margin-left: 30px;
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 450px;
+  border-radius: 14px;
+}
+#poster {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#poster img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   transition: 0.4s;
+  border-radius: 12px;
 }
-#navright select:hover {
-  color: blue;
+#datalist {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 1.5em 1.5em 2em;
+  backdrop-filter: blur(16px);
+  background-color: #000;
+  transition: 0.5s;
 }
-#navright button {
-  background: none;
-  border: none;
-  padding: 14px;
-  font-size: 18px;
+#card:hover #datalist {
+  bottom: 0;
+}
+#datalist h1 {
   color: wheat;
-  border-radius: 35px;
-  border: solid blue 2px;
-  width: 150px;
-  transition: 0.4s;
-  font-weight: 700;
-}
-#navright button:hover {
-  background-color: blue;
-  color: wheat;
-}
-#navright i {
-  font-size: 33px;
-  color: wheat;
-  cursor: pointer;
-  margin-right: 12px;
-}
-#center {
-  padding: 250px 30px;
-}
-#center h2 {
-  color: blue;
-  font-size: 28px;
-  font-weight: 700;
-}
-#center h1 {
-  font-size: 33px;
-  color: wheat;
-  font-weight: 600;
-}
-#center h1 span {
-  font-size: 33px;
-  color: blue;
-  font-weight: 600;
-}
-#divp p {
-  background: yellowgreen;
-  display: inline-block;
-  padding: 7px 11px;
+  font-size: 26px;
   font-weight: 800;
-  font-size: 8px;
-  cursor: pointer;
 }
-#center button {
+#datalist p {
+  color: wheat;
+  font-weight: 800;
+}
+#divstar {
+display: inline-block;
+}
+#divstar input{
+  display: none;
+}
+#divstar label{
+  float: right;
+  cursor: pointer;
+  color: wheat;
+  transition: 0.3s;
+}
+#divstar label::before{
+  content: '\2605';
+  font-size: 30px;
+
+}
+#divstar input:checked~label,
+
+#divstar label:hover,
+#divstar label:hover~label  
+{
+color: #e5e216;
+transition:  0.3s;
+}
+button{
+  display: flex;
+  align-items: center;
   background: none;
   border: none;
   padding: 9px;
@@ -117,8 +129,7 @@
   font-weight: 700;
   cursor: pointer;
 }
-#center button:hover {
-  background-color: blue;
-  color: wheat;
-  transition: 0.4s;
+#datalist button:hover{
+background-color: #e5e216;
+color: #21232b;
 }

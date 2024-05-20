@@ -1,0 +1,124 @@
+* {
+  font-family: "cairo", sans-serif;
+  margin: 0%;
+  padding: 0%;
+  scroll-behavior: smooth;
+}
+
+#content {
+  /* Remove padding to allow full-screen image */
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("backgrd.avif");
+  background-repeat: no-repeat;
+  background-position: center; /* Center the image */
+  background-size: cover; /* Scale the image to cover the screen */
+}
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#navbar #navleft {
+  margin-left: 20px;
+}
+#navbar #navleft a {
+  text-decoration: none;
+  color: wheat;
+  font-size: 34px;
+  font-weight: 700;
+}
+#navbar #navcenter a:hover {
+  color: blue;
+}
+
+#navbar #navcenter a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: wheat;
+  font-size: 20px;
+  transition: 0.5s;
+}
+#navright {
+  margin-right: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#navright select {
+  background: none;
+  color: wheat;
+  margin-right: 12px;
+  font-size: 18px;
+  transition: 0.4s;
+}
+#navright select:hover {
+  color: blue;
+}
+#navright button {
+  background: none;
+  border: none;
+  padding: 14px;
+  font-size: 18px;
+  color: wheat;
+  border-radius: 35px;
+  border: solid blue 2px;
+  width: 150px;
+  transition: 0.4s;
+  font-weight: 700;
+}
+#navright button:hover {
+  background-color: blue;
+  color: wheat;
+}
+#navright i {
+  font-size: 33px;
+  color: wheat;
+  cursor: pointer;
+  margin-right: 12px;
+}
+#center {
+  padding: 250px 30px;
+}
+#center h2 {
+  color: blue;
+  font-size: 28px;
+  font-weight: 700;
+}
+#center h1 {
+  font-size: 33px;
+  color: wheat;
+  font-weight: 600;
+}
+#center h1 span {
+  font-size: 33px;
+  color: blue;
+  font-weight: 600;
+}
+#divp p {
+  background: yellowgreen;
+  display: inline-block;
+  padding: 7px 11px;
+  font-weight: 800;
+  font-size: 8px;
+  cursor: pointer;
+}
+#center button {
+  background: none;
+  border: none;
+  padding: 9px;
+  font-size: 14px;
+  color: wheat;
+  border-radius: 35px;
+  border: solid blue 2px;
+  width: 130px;
+  transition: 0.4s;
+  font-weight: 700;
+  cursor: pointer;
+}
+#center button:hover {
+  background-color: blue;
+  color: wheat;
+  transition: 0.4s;
+}
